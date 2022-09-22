@@ -1,0 +1,13 @@
+.QuestPage {
+  min-height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.quest-content {
+  font-size: 21px;
+  color: #FFFFFF;
+}
