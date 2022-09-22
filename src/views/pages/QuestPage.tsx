@@ -1,8 +1,11 @@
 import React from 'react';
-import '../../style/pages/QuestPage.css';
 
 import { MuseClient } from 'muse-js';
 import { useNavigate } from 'react-router-dom';
+
+import backgroundImg from "../../imgs/background.jpeg";
+import '../../style/pages/QuestPage.css';
+import Header from "../components/Header";
 import { startMeasurement } from '../pages/MeasurementPage';
 
 async function connectMuse(callback: VoidFunction) {
@@ -21,13 +24,15 @@ function QuestPage() {
   const navigate = useNavigate();
 
   return (
-    <div className="QuestPage">
+    <div className="QuestPage" style={{backgroundImage: `url(${backgroundImg})`}}>
+      <Header />
       <div className="quest-container">
         <div className="quest-header">
           0/100
         </div>
         <div className="quest-content">
-          Measure your brainwaves while watching an ad
+          Measure your brainwaves while watching an ad <br />
+          Reward: 0.03 eth
         </div>
       </div>
       <button className="start-button" onClick={() => {connectMuse(() => navigate('/measurement'))}}>START</button>

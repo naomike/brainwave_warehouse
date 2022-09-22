@@ -1,0 +1,16 @@
+.Header {
+  width: 100%;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0% 2%;
+  margin-top: 2%;
+}
+
+.connect-wallet-button {
+  height: 40px;
+  width: 100px;
+}

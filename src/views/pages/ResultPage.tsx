@@ -1,4 +1,3 @@
-import '../../style/pages/ResultPage.css'
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -11,6 +10,10 @@ import {
 } from 'chart.js';
 import { Line } from "react-chartjs-2";
 import { Link } from 'react-router-dom';
+
+import backgroundImg from "../../imgs/background.jpeg";
+import '../../style/pages/ResultPage.css'
+import Header from "../components/Header";
 
 ChartJS.register(
   CategoryScale,
@@ -62,7 +65,8 @@ function ResultPage() {
   };
 
   return (
-    <div className="ResultPage">
+    <div className="ResultPage" style={{backgroundImage: `url(${backgroundImg})`}}>
+      <Header />
       <div className="result__graph_area">
         <Line data={graphData} options={graphOptions} />
       </div>

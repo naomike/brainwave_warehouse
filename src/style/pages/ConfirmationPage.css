@@ -1,11 +1,11 @@
-.HomePage {
+.ConfirmationPage {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.quest-board {
+.confirmation-box {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,21 +19,7 @@
   border-radius: 18px;
 }
 
-.quest-board-header {
-  width: 90%;
-  margin-bottom: 2%;
-}
-
-.quest {
-  height: 6%;
-  width: 100%;
-
-  border: 0.1px solid gray;
-  border-radius: 0px;
-  background-color: #FFFFFF;
-}
-
-.create-quest-button {
-  height: 30px;
-  margin-top: 300px;
+.row-container {
+  display: flex;
+  flex-direction: row;
 }

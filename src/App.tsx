@@ -11,6 +11,7 @@ import HomePage from './views/pages/HomePage';
 import QuestPage from './views/pages/QuestPage';
 import MeasurementPage from './views/pages/MeasurementPage';
 import ResultPage from './views/pages/ResultPage';
+import ConfirmationPage from './views/pages/ConfirmationPage';
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
       <Route path='/' element={<HomePage />}></Route>
       <Route path='/quest' element={<QuestPage />}></Route>
       <Route path='/measurement' element={<MeasurementPage />}></Route>
+      <Route path='/confirmation' element={<ConfirmationPage />}></Route>
       <Route path='/result' element={<ResultPage />}></Route>
     </Routes>
   );

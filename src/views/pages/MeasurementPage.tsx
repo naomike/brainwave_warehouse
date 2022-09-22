@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
-import '../../style/pages/MeasurementPage.css';
 
 import { takeWhile } from 'rxjs/operators';
 import { bandpassFilter, epoch, fft, powerByBand } from '@neurosity/pipes'
 import { zipSamples } from 'muse-js';
 import { useNavigate } from 'react-router-dom';
+
 import { Brainwaves } from '../../types/brainwaves';
+import '../../style/pages/MeasurementPage.css';
 
 function buildPipe() {
   window.pipeBands$ = zipSamples(window.source.eegReadings$).pipe(
@@ -81,18 +82,15 @@ function MeasurementPage() {
       return
     }
     window.isMeasuring = false;
-    navigate('/result')
+    navigate('/confirmation')
   }
 
   if (remainingTime > 0) {
     return (
       <div className="MeasurementPage">
-        <div className="timer">
-          <div className="remaining-timer-text">REMAINING TIME</div>
-          <div className="remaining-timer-num">
-            { Math.floor(remainingTime / 60) }:{ String(remainingTime % 60).padStart(2, '0') }
-          </div>
-        </div>
+        <video className="ad-video" autoPlay>
+          <source src={require('../../videos/ad.mp4')} type="video/mp4" />
+        </video>
       </div>
     );
   } else {

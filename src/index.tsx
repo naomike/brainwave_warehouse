@@ -8,6 +8,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 declare global {
   interface Window {
+    ethereum: any;
     quest1DataNum: number;
     isMeasuring: boolean;
     source: any;

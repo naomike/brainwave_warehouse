@@ -4,15 +4,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .quest-container {
   width: 80%;
-  align-items: center;;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
 }
 
 .quest-header {
+  width: 100%;
   display: flex;
   justify-content: flex-end;
 
