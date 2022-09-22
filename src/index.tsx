@@ -8,6 +8,8 @@ import { BrowserRouter } from 'react-router-dom';
 
 declare global {
   interface Window {
+    quest1DataNum: number;
+    isMeasuring: boolean;
     source: any;
     pipeBands$: any;
     subscriptionBands: any;

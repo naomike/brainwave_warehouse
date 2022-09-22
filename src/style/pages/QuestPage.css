@@ -7,7 +7,25 @@
   justify-content: center;
 }
 
+.quest-container {
+  width: 80%;
+  align-items: center;;
+}
+
+.quest-header {
+  display: flex;
+  justify-content: flex-end;
+
+  font-size: 21px;
+  color: #FFFFFF;
+  margin-bottom: 3%;
+}
+
 .quest-content {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3%;
+
   font-size: 21px;
   color: #FFFFFF;
 }

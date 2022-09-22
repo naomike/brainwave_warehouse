@@ -1,0 +1,22 @@
+.MeasurementPage {
+  min-height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.remaining-timer-text {
+  color: white;
+}
+
+.remaining-timer-num {
+  color: white;
+}
